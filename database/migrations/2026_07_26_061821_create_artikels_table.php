@@ -14,7 +14,11 @@ return new class extends Migration
         Schema::create('artikels', function (Blueprint $table) {
             $table->id('id_artikel');
             $table->string('title');
-            $table->string('author');
+            $table->foreignId('author_id')->constrained(
+                table: 'users',
+                indexName: 'artikels_author_id'
+            );
+            $table->foreignId('category_id')->references('category_id')->on('categories');
             $table->string('slug')->unique();
             $table->text('body');
             $table->timestamps();
