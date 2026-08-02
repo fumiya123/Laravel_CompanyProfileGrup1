@@ -19,6 +19,10 @@ return new class extends Migration
                 indexName: 'artikels_author_id'
             );
             $table->foreignId('category_id')->references('category_id')->on('categories');
+            $table->foreignId('level_id')->constrained(
+                table: 'levels', 
+                indexName: 'artikels_level_id'
+            );
             $table->string('slug')->unique();
             $table->text('body');
             $table->timestamps();

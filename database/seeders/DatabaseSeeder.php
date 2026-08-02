@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             CategorySeeder::class,
+            LevelSeeder::class,
         ]);
 
         // 2. Ambil satu ID secara acak dari database untuk dimasukkan ke artikel
@@ -31,6 +32,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Google Sebut AI Berpotensi Tambah Rp 910 Triliun ke Ekonomi Indonesia',
                 'author_id' => 8,
                 'category_id' => 5,
+                'level_id' => 1,
                 'slug' => 'google-sebut-ai-berpotensi-tambah-Rp-910-triliun-ke-ekonomi-indonesia',
                 'body' => <<<'TEXT'
                             Google menilai Indonesia memiliki peluang besar memanfaatkan akal imitasi (AI) untuk mendorong pertumbuhan ekonomi. Namun, potensi ini belum dimanfaatkan secara optimal, khususnya oleh pelaku usaha mikro, kecil, dan menengah (UMKM) yang menjadi salah satu tulang punggung penggerak ekonomi. “Saat ini baru 14,5% UMKM yang memanfaatkan AI. Jadi peluang besar ada di depan kita,” kata Vice President Government Affairs and Public Policy Centers of Excellence Google Markham Erickson dalam acara Google AI & YouTube untuk Ekonomi Kreatif di Jakarta, Kamis (23/7).
@@ -56,6 +58,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Bahaya penyakit akibat paparan asbes yang sulit dideteksi',
                 'author_id' => 1,
                 'category_id' => 1,
+                'level_id' => 2,
                 'slug' => 'bahaya-penyakit-akibat-paparan-asbes-yang-sulit-dideteksi',
                 'body' => <<<'TEXT'
                             WHO sudah melarang penggunaan asbes dalam bentuk apa pun, karena material ini terbukti bersifat karsinogenik.
@@ -73,6 +76,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Bank Indonesia Holds Benchmark Rate at 5.75% While Expanding Measures to Support Rupiah Stability and Economic Growth',
                 'author_id' => 1,
                 'category_id' => 3,
+                'level_id' => 3,
                 'slug' => 'bank-indonesia-holds-benchmark-rate-at',
                 'body' => <<<'TEXT'
                             Bank Indonesia (BI) has maintained its benchmark BI-Rate at 5.75%, along with the Deposit Facility rate at 4.75% and the Lending Facility rate at 6.50%, while introducing new incentives to attract foreign portfolio inflows and strengthen rupiah stability amid persistent global uncertainty.
@@ -98,6 +102,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Menko AHY: Dekarbonisasi Transportasi Bukan Sekadar Kurangi Emisi, Melainkan untuk Masa Depan Generasi Indonesia',
                 'author_id' => 1,
                 'category_id' => 4,
+                'level_id' => 4,
                 'slug' => 'menko-ahy-dekarbonisasi-transportasi-bukan-sekadar-kurangi-emisi',
                 'body' => <<<'TEXT'
                             JAKARTA – Sebagai upaya dekarbonisasi sektor transportasi, Menteri Koordinator Bidang Infrastruktur dan Pembangunan Kewilayahan Agus Harimurti Yudhoyono (AHY) menegaskan upaya tersebut bukan hanya agenda lingkungan hidup, melainkan bagian dari ikhtiar pemerintah menjaga ketahanan energi nasional, menekan biaya logistik, serta melindungi kesejahteraan masyarakat di tengah ketidakpastian ekonomi global.
@@ -149,6 +154,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Jalan Rusak di Deli Serdang Sering Bikin Warga Kecelakaan',
                 'author_id' => 1,
                 'category_id' => 4,
+                'level_id' => 1,
                 'slug' => 'jalan-rusak-di-deli-serdang-sering-bikin-warga-kecelakaan',
                 'body' => <<<'TEXT'
                             Deli Serdang - Jalan Veteran Pasar 9, Desa Manunggal, Kecamatan Helvetia, Kabupaten Deli Serdang, Sumatera Utara, kerap memakan korban jiwa lantaran rusak parah dan berlubang. Melihat kondisi tersebut, warga menimbun jalan itu dengan bantuan dari warga lain pakai dana pribadi.
@@ -182,6 +188,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Kisah 100 rumah sakit pakai bolpoin dan kertas demi kalahkan serangan siber',
                 'author_id' => 8,
                 'category_id' => 1,
+                'level_id' => 2,
                 'slug' => 'kisah-100-rumah-sakit-pakai-bolpoin-dan-kertas-demi-kalahkan-serangan-siber',
                 'body' => <<<'TEXT'
                             Satu demi satu panggilan masuk dari rumah sakit. Para penjahat membobol jaringan komputer dalam peretasan massal yang membahayakan banyak nyawa.
@@ -289,6 +296,7 @@ class DatabaseSeeder extends Seeder
                 'title' => '2026 GEM Report',
                 'author_id' => 2,
                 'category_id' => 2,
+                'level_id' => 3,
                 'slug' => '2026-gem-report',
                 'body' => <<<'TEXT'
                             #YourStoryCounts
@@ -312,6 +320,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Launch of the 2023 UNESCO GEM Report: Transforming Education with Technology in Southeast Asia',
                 'author_id' => 2,
                 'category_id' => 2,
+                'level_id' => 4,
                 'slug' => 'launch-2023-unesco-gem-report-transforming-education-technology-southeast-asia',
                 'body' => <<<'TEXT'
                             Launch of the 2023 UNESCO GEM Report in Indonesia calls for technology to be used on learners’ terms, highlighting technology as a Tool for Educational Transformation in Southeast Asia.
@@ -333,6 +342,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Golden Vision 2045: Reaping the Gains from Trade',
                 'author_id' => 2,
                 'category_id' => 3,
+                'level_id' => 1,
                 'slug' => 'golden-vision-2045-reaping-the-gains-from-trade-573708',
                 'body' => <<<'TEXT'
                             Indonesia has been pursuing a broad push towards greater trade openness with regional and global partners, seeking to leverage external demand to reach high-income status by 2045. This welcome and timely effort comes amid ongoing trade policy shocks. Our analysis suggests that deeper trade integration, focusing on reducing non-tariff barriers, along with complementary structural reforms, can generate significant GDP gains for Indonesia. These gains can come from unilateral actions on reducing non-tariff barriers affecting imports, which would be amplified by increasing market access in the context of trade agreements with major partners. Alongside trade policy, structural reforms in other areas—such as human capital and logistics—can further enhance trade integration. These reforms can reduce trade costs on their own, while also complement trade policy by helping Indonesia to broaden comparative advantage across sectors. Such an ambitious trade liberalization and structural reform program could make Indonesia ‘open for business’ amid shifting global supply chains; the resulting GVC-integration, supported by FDI, could drive gains beyond this paper’s estimates.
@@ -342,6 +352,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Menkomdigi: Tanpa Keterampilan Inklusif, Transformasi Digital Bisa Perlebar Ketimpangan',
                 'author_id' => 2,
                 'category_id' => 5,
+                'level_id' => 2,
                 'slug' => 'menkomdigi-tanpa-keterampilan-inklusif-transformasi-digital-bisa-perlebar-ketimpangan',
                 'body' => <<<'TEXT'
                             Menteri Komunikasi dan Digital (Menkomdigi) Meutya Hafid mengingatkan bahwa transformasi digital dan perkembangan teknologi global tidak otomatis membawa manfaat bagi semua orang. Tanpa kebijakan pengembangan keterampilan yang inklusif, perubahan dunia kerja justru berisiko memperlebar ketimpangan sosial.
@@ -375,6 +386,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Menkomdigi Tawarkan Model Transformasi Digital Indonesia yang Aman dan Beretika Pada Forum PBB WSIS 2026',
                 'author_id' => 9,
                 'category_id' => 5,
+                'level_id' => 3,
                 'slug' => 'menkomdigi-tawarkan-model-transformasi-digital-indonesia-yang-aman-dan-beretika-pada-forum-pbb-wsis-2026',
                 'body' => <<<'TEXT'
                             Menteri Komunikasi dan Digital Meutya Hafid menawarkan model transformasi digital Indonesia yang mengedepankan keseimbangan antara konektivitas, pertumbuhan ekonomi digital, dan pelindungan masyarakat dalam Forum Perserikatan Bangsa-Bangsa (PBB)  World Summit on the Information Society (WSIS) Forum 2026 : Leaders SummitX. Menurutnya, transformasi digital harus dibangun di atas tiga pilar utama, yakni Terhubung, Tumbuh, dan Terjaga, agar kemajuan teknologi tidak hanya mempercepat pembangunan, tetapi juga melindungi masyarakat.
@@ -406,6 +418,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'North Hub Bidik Produksi 1.000 MMSCFD Gas, Buka Lebih dari 8.000 Lapangan Kerja',
                 'author_id' => 9,
                 'category_id' => 3,
+                'level_id' => 4,
                 'slug' => 'north-hub-bidik-produksi-1000-mmscfd-gas-buka-lebih-dari-8000-lapangan-kerja',
                 'body' => <<<'TEXT'
                             TANJUNG BALAI KARIMUN - Di tengah aktivitas galangan kapal di Tanjung Balai Karimun, pemotongan baja pertama menjadi penanda dimulainya pembangunan FPSO Bahtera Haluan Lestari, fasilitas kunci dalam North Hub Development Project. Proyek gas bernilai US$11,8 miliar ini ditargetkan mampu memproduksi 1.000 MMSCFD gas dan 80.000 BCPD kondensat pada kuartal IV 2028, serta membuka lebih dari 8.000 lapangan kerja bagi masyarakat Indonesia.
@@ -431,6 +444,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Bus H2 DDF dan Koridor Jakarta–Patimban, Tandai Babak Baru Ekosistem Hidrogen Indonesia',
                 'author_id' => 3,
                 'category_id' => 4,
+                'level_id' => 1,
                 'slug' => 'bus-h2-ddf-dan-koridor-jakarta-patimban-tandai-babak-baru-ekosistem-hidrogen-indonesia',
                 'body' => <<<'TEXT'
                             JAKARTA - Dari armada bus diesel yang dimodifikasi hingga koridor hidrogen sepanjang 194 kilometer, Indonesia mulai membawa pengembangan hidrogen dari tahap perencanaan menuju penerapan di lapangan. Langkah itu ditandai dengan peluncuran Pilot Bus Hidrogen Diesel Dual Fuel atau Bus H2 DDF serta pengembangan Green Hydrogen Corridor yang menghubungkan Jakarta, Karawang, dan Patimban.
@@ -476,6 +490,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Gas Masela Mengalir, Pemerintah Tetapkan Minimal 60 Persen Gas untuk Domestik',
                 'author_id' => 3,
                 'category_id' => 3,
+                'level_id' => 2,
                 'slug' => 'gas-masela-mengalir-pemerintah-tetapkan-minimal-60-persen-gas-untuk-domestik',
                 'body' => <<<'TEXT'
                             SAUMLAKI-KEPULAUAN TANIMBAR - Dari kawasan Laut Arafura, gas Lapangan Abadi Blok Masela dipersiapkan untuk menggerakkan kebutuhan energi dan industri di dalam negeri. Pemerintah menetapkan sedikitnya 60 persen produksi gas proyek tersebut dialokasikan untuk kebutuhan domestik, termasuk industri pupuk, kelistrikan, dan hilirisasi, sementara porsi ekspor dibatasi maksimal 40 persen.
@@ -501,6 +516,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Indonesia Accelerates Digital Transformation with Focus on Public Impact',
                 'author_id' => 3,
                 'category_id' => 5,
+                'level_id' => 3,
                 'slug' => 'indonesia-accelerates-digital-transformation-with-focus-on-public-impact',
                 'body' => <<<'TEXT'
                             Jakarta: Indonesia’s Ministry of Communication and Digital Affairs will accelerate its national digital transformation agenda in 2026, prioritizing the optimization of existing infrastructure to deliver programs with direct and measurable benefits for the public, Deputy Minister Nezar Patria said.
@@ -532,6 +548,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Ekonomi Eropa Terancam Resesi',
                 'author_id' => 10,
                 'category_id' => 3,
+                'level_id' => 4,
                 'slug' => 'ekonomi-eropa-terancam-resesi',
                 'body' => <<<'TEXT'
                             Brussel: Ekonomi Eropa mendekati titik kritis karena inflasi energi yang kembali meningkat, aktivitas manufaktur yang melambat, dan dukungan fiskal yang terbatas meningkatkan risiko resesi teknis.
@@ -561,6 +578,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Akselerasi Industri Hijau, Pemerintah Disarankan Beri Insentif',
                 'author_id' => 10,
                 'category_id' => 3,
+                'level_id' => 1,
                 'slug' => 'akselerasi-industri-hijau-pemerintah-disarankan-beri-insentif',
                 'body' => <<<'TEXT'
                             Jakarta: Direktur Eksekutif Center of Economic and Law Studies (Celios) Bhima Yudhistira menilai percepatan transformasi industri hijau, khususnya di industri kecil dan menengah (IKM), membutuhkan pendekatan berbasis insentif agar mengakselerasi transisi dari para pengusaha IKM.
@@ -602,6 +620,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Hari Mangrove Sedunia 2026, BRI Peduli Libatkan Kelompok Tani Lokal Tanam 24.000 Mangrove untuk Pulihkan Ekosistem Pesisir',
                 'author_id' => 4,
                 'category_id' => 4,
+                'level_id' => 2,
                 'slug' => 'hari-mangrove-sedunia-2026-bri-peduli-libatkan-kelompok-tani-lokal-tanam-24-000-mangrove-untuk-pulihkan-ekosistem-pesisir',
                 'body' => <<<'TEXT'
                             Karawang: Dalam rangka memperingati Hari Mangrove Sedunia yang diperingati setiap 26 Juli, BRI Peduli selaku payung dari Program Tanggung Jawab Sosial dan Lingkungan (TJSL) PT Bank Rakyat Indonesia (Persero) Tbk kembali menegaskan komitmennya terhadap keberlanjutan lingkungan melalui penanaman 24.000 pohon mangrove.  
@@ -641,6 +660,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Danantara Bangun Sistem SDM Terintegrasi di Seluruh Ekosistem BUMN',
                 'author_id' => 4,
                 'category_id' => 2,
+                'level_id' => 3,
                 'slug' => 'danantara-bangun-sistem-sdm-terintegrasi-di-seluruh-ekosistem-bumn',
                 'body' => <<<'TEXT'
                             Jakarta: COO Danantara Dony Oskaria mengungkapkan saat ini pihaknya sedang membangun sistem pengelolaan sumber daya manusia (SDM) yang terintegrasi dan berstandar kelas dunia di seluruh ekosistem BUMN.
@@ -662,6 +682,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Hilirisasi Dinilai Perkuat Posisi RI di Rantai Pasok Global',
                 'author_id' => 4,
                 'category_id' => 4,
+                'level_id' => 4,
                 'slug' => 'hilirisasi-dinilai-perkuat-posisi-ri-di-rantai-pasok-global',
                 'body' => <<<'TEXT'
                             Jakarta: Menteri Investasi dan Hilirisasi/Kepala BKPM sekaligus Chief Executive Officer Danantara Indonesia Rosan Roeslani mengungkapkan proyek hilirisasi memperkuat posisi Indonesia dalam rantai pasok global.
@@ -703,6 +724,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Penguatan Transformasi Tata Kelola Pendidikan melalui Manajamen Berbasis Sekolahh',
                 'author_id' => 6,
                 'category_id' => 2,
+                'level_id' => 1,
                 'slug' => 'penguatan-transformasi-tata-kelola-pendidikan-melalui-manajamen-berbasis-sekolahh',
                 'body' => <<<'TEXT'
                             Jakarta, Kemendikdasmen – Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) terus memperkuat implementasi Manajemen Berbasis Sekolah (MBS) sebagai fondasi transformasi tata kelola satuan pendidikan. Upaya tersebut dilakukan melalui Webinar Seri Manajemen Berbasis Sekolah Jenjang SMP Tahun 2026 bertajuk "Mengenal MBS, Memahami Konsep Pengelolaan Sekolah yang Berkualitas" yang diselenggarakan oleh Direktorat Sekolah Menengah Pertama (Direktorat SMP) pada Jumat (10/7). 
@@ -728,6 +750,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Murid Indonesia Raih Empat Medali Perunggu pada International Mathematical Olympiad 2026 di Tiongkok',
                 'author_id' => 7,
                 'category_id' => 2,
+                'level_id' => 2,
                 'slug' => 'murid-indonesia-raih-empat-medali-perunggu-pada-internationa',
                 'body' => <<<'TEXT'
                             Shanghai, Tiongkok, 25 Juli 2026 – Indonesia kembali mencatatkan prestasi membanggakan di ajang olimpiade sains internasional. Pada 67th International Mathematical Olympiad (IMO) 2026 yang berlangsung di Shanghai, Tiongkok, 10 s.d. 21 Juli 2026, delegasi Indonesia sukses meraih empat medali perunggu dan satu Honorable Mention . Hasil tersebut memperkuat rekam jejak pembinaan talenta matematika yang terus dikembangkan oleh Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) melalui Pusat Prestasi Nasional (Puspresnas) di ajang internasional. 
@@ -757,6 +780,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Benchmarking SMK Batam: Upaya Kemendikdasmen Tingkatkan SDM SMK dan Penguatan Kerja Sama Industri',
                 'author_id' => 5,
                 'category_id' => 2,
+                'level_id' => 3,
                 'slug' => 'benchmarking-smk-batam-upaya-kemendikdasmen-tingkatkan-sdm-s',
                 'body' => <<<'TEXT'
                             Batam, Kepulauan Riau, 25 Juli 2026 – Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) melalui Direktorat Sekolah Menengah Kejuruan terus berkomitmen memperkuat pendidikan vokasi, melalui penguatan kerja sama antara Sekolah Menengah Kejuruan (SMK) dengan dunia Industri. 
@@ -796,6 +820,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Jadwal Perbaikan Tol Jakarta-Cikampek Juli 2026',
                 'author_id' => 5,
                 'category_id' => 4,
+                'level_id' => 4,
                 'slug' => 'jadwal-perbaikan-tol-jakarta-cikampek-juli-2026',
                 'body' => <<<'TEXT'
                             PT JASAMARGA Transjawa Tol (JTT) melakukan perbaikan jalan tol Jakarta-Cikampek sejak 24-31 Juli 2026. Pekerjaan rekonstruksi perkerasan jalan dilakukan di sejumlah titik pada hari yang berbeda.
@@ -823,6 +848,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Di Forum PBB, Indonesia Dorong Anak Muda Jadi Inovator AI dan Perkuat Perlindungan Anak di Ruang Digital',
                 'author_id' => 5,
                 'category_id' => 5,
+                'level_id' => 1,
                 'slug' => 'di-forum-pbb-indonesia-dorong-anak-muda-jadi-inovator-ai-dan-perkuat-perlindungan-anak-di-ruang-digital',
                 'body' => <<<'TEXT'
                             Jenewa, 10 Juli 2026 – Indonesia membawa dua agenda besar ke panggung dunia: menyiapkan generasi muda sebagai pencipta teknologi kecerdasan buatan (AI) dan memperkuat perlindungan anak di ruang digital. Di tengah pesatnya adopsi AI dan bonus demografi yang dimiliki, pemerintah menegaskan bahwa transformasi digital harus tumbuh seiring dengan tata kelola yang aman dan bertanggung jawab.
@@ -850,6 +876,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'GHES 2026: Tegaskan Komitmen, PLN Terus Bangun Ekosistem Hidrogen Nasional',
                 'author_id' => 6,
                 'category_id' => 4,
+                'level_id' => 2,
                 'slug' => 'ghes-2026-tegaskan-komitmen-pln-terus-bangun-ekosistem-hidrogen-nasional',
                 'body' => <<<'TEXT'
                             Jakarta (ANTARA) - PT PLN (Persero) menegaskan komitmennya dalam mendorong pengembangan Energi Baru dan Terbarukan (EBT) sekaligus mendukung visi swasembada energi Presiden RI melalui pembangunan ekosistem hidrogen di Tanah Air. Komitmen ini tercermin dalam agenda Global Hydrogren Ecosystem Summit and Exhibition (GHES) 2026 di Jakarta pada Selasa (21/7).
@@ -889,6 +916,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'PLN EPI Bidik Pakai Biomassa 10 Juta Ton pada 2030',
                 'author_id' => 7,
                 'category_id' => 3,
+                'level_id' => 3,
                 'slug' => 'pln-epi-bidik-pakai-biomassa-10-juta-ton-pada-2030',
                 'body' => <<<'TEXT'
                             JAKARTA — PT PLN Energi Primer Indonesia (PLN EPI) membidik peningkatan pemanfaatan biomassa hingga 10 juta ton pada 2030 mendatang.  

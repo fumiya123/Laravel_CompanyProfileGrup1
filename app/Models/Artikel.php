@@ -26,9 +26,15 @@ class Artikel extends Model
     {
         return $this->belongsTo(User::class);
     }
+    
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class, 'category_id', 'category_id');
+    }
+
+    public function level()
+    {
+        return $this->belongsTo(Level::class, 'level_id', 'id');
     }
 
     public function scopeFilter (Builder $query, array $filters): void
